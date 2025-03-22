@@ -1,1 +1,3 @@
 # my-image-gallery
+
+## AIM:
