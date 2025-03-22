@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    text-align: center;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #ffdde1);
+    animation: gradient 6s ease infinite;
+    background-size: 300% 300%;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+h1 {
+    margin: 20px 0;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.gallery-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.gallery-wrapper {
+    width: 80%;
+    overflow: hidden;
+}
+
+.img-gallery {
+    display: flex;
+    gap: 25px;  
+    transition: transform 0.5s ease-in-out;
+}
+
+.img-gallery img {
+    width: 250px;
+    height: 250px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.7);
+}
+
+.full-img-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.full-img-container img {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+}
+
+.prev-btn, .next-btn {
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 12px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.prev-btn { left: 5px; }
+.next-btn { right: 5px; }
+
+.prev-btn:hover, .next-btn:hover {
+    background: rgba(255, 255, 255, 1);
+    transform: scale(1.1);
+}
+
+footer {
+    position: fixed; 
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+    color: white;
+    padding: 12px 0;
+    font-weight: bold;
+    font-size: 18px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.922);
+    text-align: center;
+}
+

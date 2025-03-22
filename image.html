@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🌸 Interactive Image Gallery 🌸</h1>
+
+    <div class="gallery-container">
+        <button class="prev-btn">&#10094;</button>
+        <div class="gallery-wrapper">
+            <div class="img-gallery">
+                <img src="image/daisy.jpg" onclick="openFullImage(this.src)">
+                <img src="image/flower.jpg" onclick="openFullImage(this.src)">
+                <img src="image/flower1.jpg" onclick="openFullImage(this.src)">
+                <img src="image/flower10.jpg" onclick="openFullImage(this.src)">
+                <img src="image/flower11.jpg" onclick="openFullImage(this.src)">
+                <img src="image/flower12.jpg" onclick="openFullImage(this.src)">
+                <img src="image/flower2.jpg" onclick="openFullImage(this.src)">
+                <img src="image/flower4.jpg" onclick="openFullImage(this.src)">
+                <img src="image/flower5.jpg" onclick="openFullImage(this.src)">
+                <img src="image/flower6.webp" onclick="openFullImage(this.src)">
+                <img src="image/flower7.jpg" onclick="openFullImage(this.src)">
+                <img src="image/flower8.jpg" onclick="openFullImage(this.src)">
+                <img src="image/flower9.jpg" onclick="openFullImage(this.src)">
+                <img src="image/lotus.jpg" onclick="openFullImage(this.src)">
+                <img src="image/sunflower.jpg" onclick="openFullImage(this.src)">
+                <img src="image/rose.jpg" onclick="openFullImage(this.src)">
+            </div>
+        </div>
+        <button class="next-btn">&#10095;</button>
+    </div>
+
+    <!-- Full-Screen Image Preview -->
+    <div class="full-img-container" id="fullImgBox">
+        <span class="close-btn" onclick="closeFullImage()">✖</span>
+        <img id="fullImg">
+    </div>
+
+    <footer>
+        <p> SARANYA S. | 212223220101 </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
